@@ -1,0 +1,24 @@
+{
+  "name": "hapi-bunyan-plugin",
+  "version": "1.0.0",
+  "description": "A Hapi.js plugin for passing all logging through bunyan.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/larrymyers/hapi-bunyan-plugin"
+  },
+  "author": "Larry Myers <larry@larrymyers.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "bunyan": "^1.0.0",
+    "hapi": "^8.0.0"
+  },
+  "devDependencies": {
+    "bunyan": "^1.3.3",
+    "bunyan-format": "^0.2.1",
+    "hapi": "^8.2.0"
+  }
+}
