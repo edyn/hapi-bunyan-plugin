@@ -59,7 +59,10 @@ module.exports = {
         });
 
         server.on('start', function() {
-            log.info({ eventType: 'start' }, 'Started on: http://%s:%d', server.info.address, server.info.port);
+            server.connections.forEach(function(connection) {
+                log.info({ eventType: 'start' }, 'Started on: http://%s:%d [%s]',
+                    connection.info.address, connection.info.port, connection.info.host);
+            });
         });
 
         server.on('stop', function() {
