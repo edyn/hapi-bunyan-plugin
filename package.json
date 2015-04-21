@@ -1,6 +1,6 @@
 {
   "name": "hapi-bunyan-plugin",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A Hapi.js plugin for passing all logging through bunyan.",
   "main": "index.js",
   "scripts": {

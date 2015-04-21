@@ -60,7 +60,7 @@ module.exports = {
 
         server.on('start', function() {
             server.connections.forEach(function(connection) {
-                log.info({ eventType: 'start' }, 'Started on: http://%s:%d [%s]',
+                log.info({ eventType: 'start', labels: connection.settings.labels.join(', ') }, 'Started on: http://%s:%d [%s]',
                     connection.info.address, connection.info.port, connection.info.host);
             });
         });
